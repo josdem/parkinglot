@@ -1,22 +1,19 @@
-Java Application project template
+Parking lot Simple Application
 ------------------------------------
 
-You have just created a basic Java application. There is a standard project
-structure for source code and tests.
+This demo application is intended to show how apply TDD in simple steps
 
-In this project you get:
+Acceptance Criteria:
 
-* A Gradle build file
-* A standard project structure:
+* Parking lot should be empty when starts (feature/first-test)
+* Park increments cars quantity in parking lot (feature/second-test)
+* Remove decrements cars quantity in parking lot (feature/third-test)
+* Maximum capacity parking lot is 5 cars (feature/fourth-test)
+* A manager can manage a parking lot and can report how many manages (feature/fifth-test)
 
-    <proj>
-      |
-      +- src
-          |
-          +- main
-          |     |
-          |     +- java
-          |
-          +- test
-          |   |
-          |   +- java
+
+### To Run
+
+```bash
+gradle test
+```
