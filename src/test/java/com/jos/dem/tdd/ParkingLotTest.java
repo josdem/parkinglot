@@ -13,4 +13,10 @@ public class ParkingLotTest {
     assertTrue(parkingLot.isEmpty());
 	}
 
+	@Test
+	public void shouldPark(){
+		parkingLot.park();
+		assertFalse(parkingLot.isEmpty());
+	}
+
 }
