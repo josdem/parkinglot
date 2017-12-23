@@ -19,4 +19,11 @@ public class ParkingLotTest {
 		assertFalse(parkingLot.isEmpty());
 	}
 
+	@Test
+	public void shouldRemove(){
+		parkingLot.park();
+	  parkingLot.remove();
+	  assertTrue(parkingLot.isEmpty());	
+	}
+
 }

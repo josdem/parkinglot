@@ -12,4 +12,8 @@ public class ParkingLot {
   	cars++;
   }
 
+  public void remove(){
+  	cars--;
+  }
+
 }
