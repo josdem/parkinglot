@@ -30,10 +30,20 @@ public class ParkingLotTest {
 
 	@Test
 	public void shouldFill(){
+		fillParkingLot();
+		assertTrue(parkingLot.isFull());	
+	}
+
+	@Test(expected=RuntimeException.class)
+	public void shouldThrowAnException(){
+		fillParkingLot();
+		parkingLot.park();
+	}
+
+	private void fillParkingLot(){
 		for(int i=0; i<MAX_CARS; i++){
 			parkingLot.park();
 		}
-		assertTrue(parkingLot.isFull());	
 	}
 
 }

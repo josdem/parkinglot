@@ -11,6 +11,9 @@ public class ParkingLot {
   }
 
   public void park(){
+  	if(isFull()){
+  		throw new RuntimeException("Cars Capacity Exceeded");
+  	}
   	cars++;
   }
 
