@@ -6,6 +6,8 @@ import org.junit.Test;
 
 public class ParkingLotTest {
 
+	private static final Integer MAX_CARS = 5;
+
 	private ParkingLot parkingLot = new ParkingLot();
 
 	@Test
@@ -24,6 +26,14 @@ public class ParkingLotTest {
 		parkingLot.park();
 	  parkingLot.remove();
 	  assertTrue(parkingLot.isEmpty());	
+	}
+
+	@Test
+	public void shouldFill(){
+		for(int i=0; i<MAX_CARS; i++){
+			parkingLot.park();
+		}
+		assertTrue(parkingLot.isFull());	
 	}
 
 }
